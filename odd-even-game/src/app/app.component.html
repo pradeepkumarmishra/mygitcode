@@ -1,0 +1,11 @@
+<div class="container">
+
+  <!-- <app-cockpit (OnServerCreated)="addServer($event)" (OnBlueprintserverCreated)="addBluePrintServer($event)"></app-cockpit>
+  <app-server *ngFor="let serverElement of serverElements" [srvElement]="serverElement"></app-server> -->
+ 
+ <app-game-control (increamentCounterEvent)="createComponent($event)"></app-game-control>
+ 
+ <app-even *ngIf="count%2==0" [no]="count"></app-even>
+ <app-odd *ngIf="count%2!=0" [no]="count"></app-odd>
+  
+</div>
